@@ -1,9 +1,10 @@
 <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
-<script src="https://raw.githack.com/jeromeetienne/AR.js/2.0.0/aframe/build/aframe-ar.js"></script>
+<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.7.5/aframe/build/aframe-ar.js"></script>
 
-< body  style =' margin：0px; 溢出：隱藏；' > 
-    < a-scene  嵌入式 arjs =' trackingMethod：最佳；' > 
-      < 盒子 位置 =' 0 0.5 0 ' 材質 =' 不透明度：0.5; ' > </ a-box > 
-      < a-camera-static />
-     </ a-scene > 
-</ body >
+<body style='margin : 0px; overflow: hidden;'>
+  <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;'>
+    <a-marker type='pattern' url='assets/pattern-marker.patt'>
+      <a-entity position='0 -6 -12' rotation="-20 0 0" gltf-model="url(assets/scene.gltf)"></a-entity>
+    </a-marker>
+  </a-scene>
+</body>
