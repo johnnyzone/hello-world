@@ -3,8 +3,8 @@
 
 <body style='margin : 0px; overflow: hidden;'>
   <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;'>
-    <a-marker type='pattern' url='pattern-qr-code.patt'>
-      <a-entity position='0 -6 -12' rotation="-20 0 0" gltf-model="url(scene.gltf)"></a-entity>
+    <a-marker type='pattern' url='assets/pattern-koo.patt'>
+      <a-entity position='0 -6 -12' rotation="-20 0 0" gltf-model="url(assets/scene.gltf)"></a-entity>
     </a-marker>
   </a-scene>
 </body>
